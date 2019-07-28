@@ -1,5 +1,6 @@
 package com.laihuanmin.common.creator;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.NodeList;
@@ -15,15 +16,14 @@ import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.exception.InvalidConfigurationException;
 import org.mybatis.generator.exception.XMLParserException;
 import org.mybatis.generator.internal.DefaultShellCallback;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class MyBatisConfigurationCreator {
     public static void create(Class envClz) throws IOException, XMLParserException, InvalidConfigurationException, SQLException, InterruptedException {
@@ -35,6 +35,23 @@ public class MyBatisConfigurationCreator {
         // 加载Spring容器环境
         SpringUtils.init(envClz);
         XmlWebApplicationContext ctx = SpringUtils.getCtx();
+        // 加载完毕Spring容器环境之后，获取所有DataSource的Bean实例
+        Map<String, DruidDataSource> dataSourceMap = ctx.getBeansOfType(DruidDataSource.class);
+        Collection<DruidDataSource> dataSourceCollection = dataSourceMap.values();
+        Iterator<DruidDataSource> iterator = dataSourceCollection.iterator();
+        while (iterator.hasNext()) {
+            DruidDataSource druidDataSource = iterator.next();
+            String driverClassName = druidDataSource.getDriverClassName();
+            // 初始化JdbcTemplate，并且根据驱动名来配置查询语句与匹配键值对
+            NamedParameterJdbcTemplate jdbcTemplate = new NamedParameterJdbcTemplate(druidDataSource);
+            String querySQL = null;
+            Map paramMap = new HashMap();
+            // 处理mysql的查表语句
+            if (driverClassName.contains("mysql")) {
+
+            }
+            System.out.println();
+        }
         // 初始化并执行MyBatis Generator工具
         List<String> warnings = new ArrayList<String>();
         ConfigurationParser cp = new ConfigurationParser(warnings);

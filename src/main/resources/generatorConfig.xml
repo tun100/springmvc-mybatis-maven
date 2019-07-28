@@ -10,7 +10,7 @@
             location="C:\Users\lai_h\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>
 
     <!-- 一个数据库一个context -->
-    <context id="sqlserverTables">
+    <context id="sqlserverTables" dbclz="mysql" >
         <!-- 生成的pojo，将implements Serializable -->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
 

@@ -4135,6 +4135,84 @@
       createtime = #{createtime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <resultMap id="BaseResultMap" type="com.laihuanmin.project.model.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="aname" jdbcType="VARCHAR" property="aname" />
+    <result column="apassword" jdbcType="VARCHAR" property="apassword" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, aname, apassword, createtime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.laihuanmin.project.model.User">
+    insert into user (id, aname, apassword, 
+      createtime)
+    values (#{id,jdbcType=INTEGER}, #{aname,jdbcType=VARCHAR}, #{apassword,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.laihuanmin.project.model.User">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="aname != null">
+        aname,
+      </if>
+      <if test="apassword != null">
+        apassword,
+      </if>
+      <if test="createtime != null">
+        createtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="aname != null">
+        #{aname,jdbcType=VARCHAR},
+      </if>
+      <if test="apassword != null">
+        #{apassword,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.laihuanmin.project.model.User">
+    update user
+    <set>
+      <if test="aname != null">
+        aname = #{aname,jdbcType=VARCHAR},
+      </if>
+      <if test="apassword != null">
+        apassword = #{apassword,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null">
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.laihuanmin.project.model.User">
+    update user
+    set aname = #{aname,jdbcType=VARCHAR},
+      apassword = #{apassword,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
     <resultMap id="BaseResultMap" type="com.laihuanmin.project.model.User">
         <id column="id" jdbcType="INTEGER" property="id" />
         <result column="aname" jdbcType="VARCHAR" property="aname" />
