@@ -35,7 +35,6 @@ public class MyBatisConfigurationCreator {
         // 加载Spring容器环境
         SpringUtils.init(envClz);
         XmlWebApplicationContext ctx = SpringUtils.getCtx();
-        System.out.println("finish");
         // 初始化并执行MyBatis Generator工具
         List<String> warnings = new ArrayList<String>();
         ConfigurationParser cp = new ConfigurationParser(warnings);
@@ -57,13 +56,14 @@ public class MyBatisConfigurationCreator {
                 File[] daoFiles = daotempFile.listFiles();
                 for (File newDaoFile : daoFiles) {
                     String interfaceName = newDaoFile.getName().replace(".java", "");
+                    System.out.println("handle interface: " + interfaceName);
                     File oldDaoFile = new File(newDaoFile.getAbsolutePath().replace("daotemp", "dao"));
                     String newFileStr = FileUtils.readFileToString(newDaoFile, encoding);
                     newFileStr = newFileStr.replaceAll("daotemp", "dao");
                     if (!oldDaoFile.exists()) {
-                        System.out.println("copy dao interface: " + interfaceName);
                         FileUtils.writeStringToFile(oldDaoFile, newFileStr, encoding);
                     } else {
+//                        此处原本想用AST来解析，但是目前看来没有必要，暂时跳过
 //                        String oldFileStr = FileUtils.readFileToString(oldDaoFile, encoding);
 //                        CompilationUnit oldUnit = StaticJavaParser.parse(oldFileStr);
 //                        CompilationUnit newUnit = StaticJavaParser.parse(newFileStr);

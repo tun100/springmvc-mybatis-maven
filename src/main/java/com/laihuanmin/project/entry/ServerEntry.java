@@ -2,6 +2,7 @@ package com.laihuanmin.project.entry;
 
 import com.laihuanmin.common.spring.SpringUtils;
 import com.laihuanmin.common.utils.CommonUtils;
+import com.laihuanmin.project.define.ProjectSettingDefine;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
@@ -24,7 +25,7 @@ public class ServerEntry {
 
     public void initServer() throws Exception {
         Integer port = 12345;
-        String basepath = "basic";
+        String basepath = ProjectSettingDefine.WEB_URL_PREFIX;
         Server server = new Server(port);
         Class envClz = this.getClass();
         String tempWebXmlFileAbsolutePath = SpringUtils.getWebXmlAbsolutePath(envClz);

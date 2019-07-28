@@ -1,19 +1,23 @@
 package com.laihuanmin.common.spring;
 
 import com.laihuanmin.common.utils.CommonUtils;
+import com.laihuanmin.project.define.ProjectSettingDefine;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jetty.webapp.WebAppContext;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
 import java.io.*;
 import java.util.Locale;
 
 public class SpringUtils {
-    public static void init(Class envClass) {
+    public static void init(Class envClass) throws IOException {
         XmlWebApplicationContext applicationContext = new XmlWebApplicationContext();
         File classFilePath = CommonUtils.getClassFilePath(envClass, "applicationContext.xml");
-        applicationContext.setConfigLocation(classFilePath.getAbsolutePath());
-//        applicationContext.setServletContext();
+        applicationContext.setConfigLocation("file:"+classFilePath.getAbsolutePath());
+        String webXmlAbsolutePath = getWebXmlAbsolutePath(envClass);
+        WebAppContext webAppContext = getWebAppContext(ProjectSettingDefine.WEB_URL_PREFIX, webXmlAbsolutePath);
+        applicationContext.setServletContext(webAppContext.getServletContext());
         applicationContext.refresh();
         setCtx(applicationContext);
     }

@@ -1,6 +1,8 @@
 package com.laihuanmin.project.entry;
 
+import com.alibaba.druid.support.logging.Log4j2Impl;
 import com.laihuanmin.common.creator.MyBatisConfigurationCreator;
+import com.laihuanmin.common.utils.CommonUtils;
 import org.mybatis.generator.exception.InvalidConfigurationException;
 import org.mybatis.generator.exception.XMLParserException;
 
