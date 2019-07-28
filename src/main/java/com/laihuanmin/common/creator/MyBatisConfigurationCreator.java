@@ -6,6 +6,7 @@ import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.BodyDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFactory;
+import com.laihuanmin.common.spring.SpringUtils;
 import com.laihuanmin.common.utils.CommonUtils;
 import org.apache.commons.io.FileUtils;
 import org.mybatis.generator.api.MyBatisGenerator;
@@ -14,6 +15,7 @@ import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.exception.InvalidConfigurationException;
 import org.mybatis.generator.exception.XMLParserException;
 import org.mybatis.generator.internal.DefaultShellCallback;
+import org.springframework.web.context.support.XmlWebApplicationContext;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -24,16 +26,20 @@ import java.util.List;
 import java.util.Optional;
 
 public class MyBatisConfigurationCreator {
-    public static void main(String[] args) throws InvalidConfigurationException, IOException, XMLParserException, SQLException, InterruptedException {
+    public static void create(Class envClz) throws IOException, XMLParserException, InvalidConfigurationException, SQLException, InterruptedException {
         // 配置声明
         String encoding = "UTF-8";
         // 声明class目录与源码目录
-        File classDirectory = CommonUtils.getClassFilePath(MyBatisGenerator.class);
+        File classDirectory = CommonUtils.getClassFilePath(envClz);
         File sourceDirectory = new File(classDirectory.getParentFile().getParentFile(), "src/main/java");
+        // 加载Spring容器环境
+        SpringUtils.init(envClz);
+        XmlWebApplicationContext ctx = SpringUtils.getCtx();
+        System.out.println("finish");
         // 初始化并执行MyBatis Generator工具
         List<String> warnings = new ArrayList<String>();
         ConfigurationParser cp = new ConfigurationParser(warnings);
-        File generatorConfigFile = CommonUtils.getClassFilePath(MyBatisGenerator.class, "generatorConfig.xml");
+        File generatorConfigFile = CommonUtils.getClassFilePath(envClz, "generatorConfig.xml");
         Configuration configuration = cp.parseConfiguration(generatorConfigFile);
         DefaultShellCallback callback = new DefaultShellCallback(true);
         MyBatisGenerator myBatisGenerator = new MyBatisGenerator(configuration, callback, warnings);
@@ -51,12 +57,11 @@ public class MyBatisConfigurationCreator {
                 File[] daoFiles = daotempFile.listFiles();
                 for (File newDaoFile : daoFiles) {
                     String interfaceName = newDaoFile.getName().replace(".java", "");
-                    System.out.println(newDaoFile);
-                    System.out.println(interfaceName);
                     File oldDaoFile = new File(newDaoFile.getAbsolutePath().replace("daotemp", "dao"));
                     String newFileStr = FileUtils.readFileToString(newDaoFile, encoding);
                     newFileStr = newFileStr.replaceAll("daotemp", "dao");
                     if (!oldDaoFile.exists()) {
+                        System.out.println("copy dao interface: " + interfaceName);
                         FileUtils.writeStringToFile(oldDaoFile, newFileStr, encoding);
                     } else {
 //                        String oldFileStr = FileUtils.readFileToString(oldDaoFile, encoding);

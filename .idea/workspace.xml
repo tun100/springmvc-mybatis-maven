@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b8d4388-7368-4b8e-a59b-0f4f92971b85" name="Default" comment="kj">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/basic_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/basic_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/basic.iml" afterPath="$PROJECT_DIR$/basic.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/utils/CommonUtils.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java" afterPath="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java" afterPath="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,94 +40,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyBatisConfigurationCreator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyBatisConfigurationCreator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1548#1556#0" expanded="true" />
-                <element signature="e#2246#2247#0" expanded="true" />
-                <element signature="e#2331#2332#0" expanded="true" />
+                <element signature="e#1812#1820#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
+                <element signature="e#2579#2580#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="403" column="0" lean-forward="false" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-              <folding>
-                <marker date="1564318183301" expanded="true" signature="3418:3518" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="3604:3658" ph="delete from user... " />
-                <marker date="1564318183301" expanded="true" signature="3748:3941" ph="insert into user... " />
-                <marker date="1564318183301" expanded="true" signature="4882:5242" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="5344:5537" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="6088:6188" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="6274:6328" ph="delete from user... " />
-                <marker date="1564318183301" expanded="true" signature="6418:6611" ph="insert into user... " />
-                <marker date="1564318183301" expanded="true" signature="7552:7912" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="8014:8207" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="8758:8858" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="8944:8998" ph="delete from user... " />
-                <marker date="1564318183301" expanded="true" signature="9088:9281" ph="insert into user... " />
-                <marker date="1564318183301" expanded="true" signature="10222:10582" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="10684:10877" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="11428:11528" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="11614:11668" ph="delete from user... " />
-                <marker date="1564318183301" expanded="true" signature="11758:11951" ph="insert into user... " />
-                <marker date="1564318183301" expanded="true" signature="12892:13252" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="13354:13547" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="126266:126377" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="126467:126521" ph="delete from user... " />
-                <marker date="1564318183301" expanded="true" signature="126613:126806" ph="insert into user... " />
-                <marker date="1564318183301" expanded="true" signature="127937:128369" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="128475:128668" ph="update user... " />
-                <marker date="1564318183301" expanded="true" signature="128775:128886" ph="select from user" />
-                <marker date="1564318183301" expanded="true" signature="128824:128886" ph="select from user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IOFileFilter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/org/apache/commons/io/filefilter/IOFileFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/org/apache/commons/io/FileUtils.java">
+      <file leaf-file-name="MyBatisGeneratorEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/MyBatisGeneratorEntry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="535" column="20" lean-forward="false" selection-start-line="535" selection-start-column="20" selection-end-line="535" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/utils/CommonUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,63 +67,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <file leaf-file-name="SpringUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/spring/SpringUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="53" column="63" lean-forward="false" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+            <state relative-caret-position="230">
+              <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1943#1944#0" expanded="true" />
+                <element signature="e#1969#1970#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyBatisGenerator.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7.jar!/org/mybatis/generator/api/MyBatisGenerator.class">
+      <file leaf-file-name="WebAppContext.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/webapp/WebAppContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <marker date="1564307221491" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1564307221491" expanded="false" signature="149:1125" ph="..." />
-                <marker date="1564307221491" expanded="true" signature="1567:2329" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="2438:2506" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="2639:2708" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="2879:2963" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="3154:6351" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="6484:7872" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="8003:9280" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="9376:9753" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="9823:10439" ph="{...}" />
-                <marker date="1564307221491" expanded="false" signature="10499:10510" ph=" { " />
-                <marker date="1564307221491" expanded="false" signature="10541:10547" ph=" }" />
-                <marker date="1564307221491" expanded="false" signature="10605:10616" ph=" { " />
-                <marker date="1564307221491" expanded="false" signature="10646:10652" ph=" }" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Configuration.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7.jar!/org/mybatis/generator/config/Configuration.class">
+      <file leaf-file-name="ServletContextHandler.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/servlet/ServletContextHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-              <folding>
-                <marker date="1564307221491" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1564307221491" expanded="false" signature="152:568" ph="..." />
-                <marker date="1564307221491" expanded="true" signature="742:749" ph="{}" />
-                <marker date="1564307221491" expanded="true" signature="798:809" ph=" { " />
-                <marker date="1564307221491" expanded="true" signature="842:848" ph=" }" />
-                <marker date="1564307221491" expanded="false" signature="895:906" ph=" { " />
-                <marker date="1564307221491" expanded="false" signature="935:941" ph=" }" />
-                <marker date="1564307221491" expanded="true" signature="1007:1825" ph="{...}" />
-                <marker date="1564307221491" expanded="false" signature="1865:1876" ph=" { " />
-                <marker date="1564307221491" expanded="false" signature="1897:1903" ph=" }" />
-                <marker date="1564307221491" expanded="false" signature="1948:1959" ph=" { " />
-                <marker date="1564307221491" expanded="false" signature="1986:1992" ph=" }" />
-                <marker date="1564307221491" expanded="true" signature="2035:2325" ph="{...}" />
-                <marker date="1564307221491" expanded="true" signature="2360:3231" ph="{...}" />
-              </folding>
+            <state relative-caret-position="341">
+              <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContextHandler.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/ContextHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="104" column="46" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScopedHandler.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/ScopedHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandlerWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,8 +148,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -237,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/convertor/GsmrStringConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/convertor/WebStringConverter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/listener/SQLListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/listener/BootListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/listener/WebListener.java" />
@@ -259,8 +205,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/creator/MyBatisConfigurationCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/utils/creator/MyBatisConfigurationCreator.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/MyBatisGeneratorEntry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/common/spring/SpringUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laihuanmin/project/final/ProjectFinalValue.java" />
       </list>
     </option>
   </component>
@@ -761,6 +711,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="laihuanmin" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laihuanmin" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -771,6 +731,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="laihuanmin" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laihuanmin" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="entry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="basic" type="b2602c69:ProjectViewProjectNode" />
@@ -804,6 +774,57 @@
               <item name="basic" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jetty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jetty" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jetty" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jetty" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.eclipse.jetty.aggregate:jetty-all:9.2.14.v20151106" type="70bed36:NamedLibraryElementNode" />
+              <item name="jetty-all-9.2.14.v20151106.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jetty" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -820,6 +841,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -848,7 +870,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyBatisConfigurationCreator">
+  <component name="RunManager" selected="Application.MyBatisGeneratorEntry">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -863,6 +885,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.laihuanmin.common.creator.MyBatisConfigurationCreator" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="basic" />
+      <envs />
+    </configuration>
+    <configuration name="MyBatisGeneratorEntry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.laihuanmin.project.entry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.laihuanmin.project.entry.MyBatisGeneratorEntry" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1132,17 +1173,19 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.MyBatisGenerator" />
       <item index="1" class="java.lang.String" itemvalue="Maven.basic [package]" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.BasicServer" />
       <item index="3" class="java.lang.String" itemvalue="Application.ServerEntry" />
       <item index="4" class="java.lang.String" itemvalue="Application.MyBatisConfigurationCreator" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MyBatisGeneratorEntry" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MyBatisConfigurationCreator" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ServerEntry" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.MyBatisGeneratorEntry" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MyBatisConfigurationCreator" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ServerEntry" />
       </list>
     </recent_temporary>
   </component>
@@ -1161,15 +1204,16 @@
       <updated>1564221302875</updated>
       <workItem from="1564221308818" duration="5883000" />
       <workItem from="1564284160223" duration="13128000" />
-      <workItem from="1564302593754" duration="14922000" />
+      <workItem from="1564302593754" duration="17480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33933000" />
+    <option name="totallyTimeSpent" value="36491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1189,10 +1233,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46659365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5191676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3844469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2902519" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19065522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21535982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1282,40 +1326,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1449,14 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1635,33 +1637,33 @@
         <state relative-caret-position="322">
           <caret line="403" column="0" lean-forward="false" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
           <folding>
-            <marker date="1564318183301" expanded="true" signature="3418:3518" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="3604:3658" ph="delete from user... " />
-            <marker date="1564318183301" expanded="true" signature="3748:3941" ph="insert into user... " />
-            <marker date="1564318183301" expanded="true" signature="4882:5242" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="5344:5537" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="6088:6188" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="6274:6328" ph="delete from user... " />
-            <marker date="1564318183301" expanded="true" signature="6418:6611" ph="insert into user... " />
-            <marker date="1564318183301" expanded="true" signature="7552:7912" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="8014:8207" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="8758:8858" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="8944:8998" ph="delete from user... " />
-            <marker date="1564318183301" expanded="true" signature="9088:9281" ph="insert into user... " />
-            <marker date="1564318183301" expanded="true" signature="10222:10582" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="10684:10877" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="11428:11528" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="11614:11668" ph="delete from user... " />
-            <marker date="1564318183301" expanded="true" signature="11758:11951" ph="insert into user... " />
-            <marker date="1564318183301" expanded="true" signature="12892:13252" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="13354:13547" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="126266:126377" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="126467:126521" ph="delete from user... " />
-            <marker date="1564318183301" expanded="true" signature="126613:126806" ph="insert into user... " />
-            <marker date="1564318183301" expanded="true" signature="127937:128369" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="128475:128668" ph="update user... " />
-            <marker date="1564318183301" expanded="true" signature="128775:128886" ph="select from user" />
-            <marker date="1564318183301" expanded="true" signature="128824:128886" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="3418:3518" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="3604:3658" ph="delete from user... " />
+            <marker date="1564319573906" expanded="true" signature="3748:3941" ph="insert into user... " />
+            <marker date="1564319573906" expanded="true" signature="4882:5242" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="5344:5537" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="6088:6188" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="6274:6328" ph="delete from user... " />
+            <marker date="1564319573906" expanded="true" signature="6418:6611" ph="insert into user... " />
+            <marker date="1564319573906" expanded="true" signature="7552:7912" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="8014:8207" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="8758:8858" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="8944:8998" ph="delete from user... " />
+            <marker date="1564319573906" expanded="true" signature="9088:9281" ph="insert into user... " />
+            <marker date="1564319573906" expanded="true" signature="10222:10582" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="10684:10877" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="11428:11528" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="11614:11668" ph="delete from user... " />
+            <marker date="1564319573906" expanded="true" signature="11758:11951" ph="insert into user... " />
+            <marker date="1564319573906" expanded="true" signature="12892:13252" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="13354:13547" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="134276:134387" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="134477:134531" ph="delete from user... " />
+            <marker date="1564319573906" expanded="true" signature="134623:134816" ph="insert into user... " />
+            <marker date="1564319573906" expanded="true" signature="135947:136379" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="136485:136678" ph="update user... " />
+            <marker date="1564319573906" expanded="true" signature="136785:136896" ph="select from user" />
+            <marker date="1564319573906" expanded="true" signature="136834:136896" ph="select from user" />
           </folding>
         </state>
       </provider>
@@ -1682,15 +1684,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/MyBatisGeneratorEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1548#1556#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2331#2332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/creator/MyBatisConfigurationCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1812#1820#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/webapp/WebAppContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="82" column="49" lean-forward="true" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/servlet/ServletContextHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="78" column="49" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/ContextHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="104" column="46" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/ScopedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="100" column="50" lean-forward="false" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/aggregate/jetty-all/9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/entry/ServerEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/final/ProjectFinalVariable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/project/final/ProjectFinalValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laihuanmin/common/spring/SpringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
           </folding>
         </state>
       </provider>
