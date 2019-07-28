@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.laihuanmin</groupId>
-    <artifactId>task</artifactId>
+    <artifactId>basic</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>task Maven Webapp</name>
+    <name>Basic Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
 
     <properties>
@@ -20,11 +20,11 @@
 
     <dependencies>
 
-         <dependency>
-             <groupId>org.slf4j</groupId>
-             <artifactId>slf4j-nop</artifactId>
-             <version>1.7.2</version>
-         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.2</version>
+        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
@@ -213,7 +213,7 @@
     </dependencies>
 
     <build>
-        <finalName>task</finalName>
+        <finalName>basic</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>

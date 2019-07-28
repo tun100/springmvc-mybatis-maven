@@ -26,7 +26,7 @@ public class ServerEntry {
 
     public void initServer() throws Exception {
         Integer port = 12345;
-        String basepath = "task";
+        String basepath = "basic";
         Server server = new Server(port);
         File webXmlFile = new File(CommonUtils.getClassFilePath(this.getClass()).getParentFile().getParentFile(), "src/main/webapp/WEB-INF/web.xml");
         InputStream fis = new FileInputStream(webXmlFile);
