@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/mvc
+           http://www.springframework.org/schema/mvc/spring-mvc.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+    <bean id="sqlListener" class="com.laihuanmin.project.listener.BeanListener"></bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="500000000"></property>
+        <property name="maxInMemorySize" value="1024"></property>
+    </bean>
+
+    <context:property-placeholder location="classpath:app.properties"/>
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close"
+          primary="true">
+        <property name="driverClassName" value="${jdbc.driverClass}"/>
+        <property name="url" value="${jdbc.jdbcUrl}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="${jdbc.maxActive:1500}"/>
+        <property name="initialSize" value="${jdbc.initialSize:10}"/>
+        <property name="maxWait" value="${jdbc.maxWait:60000}"/>
+        <property name="minIdle" value="${jdbc.minIdle:50}"/>
+        <property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout:180}"/>
+        <property name="removeAbandoned" value="${jdbc.removeAbandoned:true}"/>
+        <property name="testOnBorrow"
+                  value="${jdbc.testOnBorrow:true}"/>
+        <property name="testOnReturn"
+                  value="${jdbc.testOnReturn:true}"/>
+        <property name="TestWhileIdle"
+                  value="${jdbc.TestWhileIdle:true}"/>
+        <property name="validationQuery" value="${jdbc.validationQuery}"/>
+        <property name="minEvictableIdleTimeMillis" value="3000"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="keepAlive" value="true"/>
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+        <property name="connectionProperties" value="keepAlive=true"/>
+        <property name="maxOpenPreparedStatements"
+                  value="20"/>
+        <property name="poolPreparedStatements" value="true"/>
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20"/>
+        <property name="filters" value="stat"></property>
+    </bean>
+
+    <bean id="jdbctemplate" class="org.springframework.jdbc.core.JdbcTemplate" primary="true">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean id="gsmrMsgConvertor" class="com.laihuanmin.project.convertor.WebStringConverter">
+        <constructor-arg index="0" value="utf-8"></constructor-arg>
+    </bean>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <ref bean="gsmrMsgConvertor"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <bean id="namedParameterJdbcTemplate"
+          class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate" primary="true">
+        <constructor-arg ref="dataSource"></constructor-arg>
+    </bean>
+
+
+    <context:component-scan
+            base-package="com.laihuanmin.project.action,com.laihuanmin.project.controller,com.laihuanmin.project.service,com.laihuanmin.project.dao"/>
+
+</beans>
