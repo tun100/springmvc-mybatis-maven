@@ -30,6 +30,25 @@
     </servlet-mapping>
 
     <!-- Druid Configuration -->
+    <filter>
+        <filter-name>DruidWebStatFilter</filter-name>
+        <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+        <init-param>
+            <param-name>exclusions</param-name>
+            <param-value>*.js,*.gif,*.jpg,*.png,*.ico,*.css,*.ico,*.jsp,*.eot,*.woff,/druid/*,/download/*</param-value>
+        </init-param>
+        <!-- 监控单个url调用的sql列表 -->
+        <init-param>
+            <param-name>profileEnable</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>DruidWebStatFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <servlet>
         <servlet-name>DruidStatView</servlet-name>
         <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
@@ -41,7 +60,7 @@
 
     <servlet-mapping>
         <servlet-name>DruidStatView</servlet-name>
-        <url-pattern>/taskweb/druid/*</url-pattern>
+        <url-pattern>/druid_k00x0012345/*</url-pattern>
     </servlet-mapping>
 
 </web-app>
