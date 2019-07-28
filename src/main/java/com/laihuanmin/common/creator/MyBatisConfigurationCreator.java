@@ -16,6 +16,7 @@ import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.exception.InvalidConfigurationException;
 import org.mybatis.generator.exception.XMLParserException;
 import org.mybatis.generator.internal.DefaultShellCallback;
+import org.springframework.jdbc.core.ColumnMapRowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
@@ -41,15 +42,20 @@ public class MyBatisConfigurationCreator {
         Iterator<DruidDataSource> iterator = dataSourceCollection.iterator();
         while (iterator.hasNext()) {
             DruidDataSource druidDataSource = iterator.next();
-            String driverClassName = druidDataSource.getDriverClassName();
-            // 初始化JdbcTemplate，并且根据驱动名来配置查询语句与匹配键值对
+            String dbType = druidDataSource.getDbType();
+            // 初始化JdbcTemplate，并且根据dbType来配置查询语句与匹配键值对
             NamedParameterJdbcTemplate jdbcTemplate = new NamedParameterJdbcTemplate(druidDataSource);
             String querySQL = null;
             Map paramMap = new HashMap();
             // 处理mysql的查表语句
-            if (driverClassName.contains("mysql")) {
-
+            if (dbType.equals("mysql")) {
+                String mysqlJdbcUrl = druidDataSource.getUrl();
+                String dbName = CommonUtils.match(mysqlJdbcUrl, "mysql\\://[^\\:]+\\:\\d+/(.*)\\?+", 1);
+                querySQL = "select table_schema as tableschema,table_name as tablename from information_schema.tables where TABLE_SCHEMA=:schema";
+                paramMap.put("schema", dbName);
             }
+            List<Map<String,Object>> tableList = jdbcTemplate.query(querySQL, paramMap, new ColumnMapRowMapper());
+
             System.out.println();
         }
         // 初始化并执行MyBatis Generator工具

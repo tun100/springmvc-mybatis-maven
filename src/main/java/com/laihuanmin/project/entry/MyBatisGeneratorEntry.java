@@ -8,9 +8,12 @@ import org.mybatis.generator.exception.XMLParserException;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MyBatisGeneratorEntry {
     public static void main(String[] args) throws InterruptedException, SQLException, InvalidConfigurationException, XMLParserException, IOException {
-        MyBatisConfigurationCreator.create(MyBatisGeneratorEntry.class);
+//        MyBatisConfigurationCreator.create(MyBatisGeneratorEntry.class);
+
     }
 }
