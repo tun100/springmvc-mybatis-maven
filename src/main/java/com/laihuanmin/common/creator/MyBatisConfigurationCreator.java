@@ -1,0 +1,82 @@
+package com.laihuanmin.common.creator;
+
+import com.github.javaparser.StaticJavaParser;
+import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.NodeList;
+import com.github.javaparser.ast.body.BodyDeclaration;
+import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFactory;
+import com.laihuanmin.common.utils.CommonUtils;
+import org.apache.commons.io.FileUtils;
+import org.mybatis.generator.api.MyBatisGenerator;
+import org.mybatis.generator.config.Configuration;
+import org.mybatis.generator.config.xml.ConfigurationParser;
+import org.mybatis.generator.exception.InvalidConfigurationException;
+import org.mybatis.generator.exception.XMLParserException;
+import org.mybatis.generator.internal.DefaultShellCallback;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class MyBatisConfigurationCreator {
+    public static void main(String[] args) throws InvalidConfigurationException, IOException, XMLParserException, SQLException, InterruptedException {
+        // 配置声明
+        String encoding = "UTF-8";
+        // 声明class目录与源码目录
+        File classDirectory = CommonUtils.getClassFilePath(MyBatisGenerator.class);
+        File sourceDirectory = new File(classDirectory.getParentFile().getParentFile(), "src/main/java");
+        // 初始化并执行MyBatis Generator工具
+        List<String> warnings = new ArrayList<String>();
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        File generatorConfigFile = CommonUtils.getClassFilePath(MyBatisGenerator.class, "generatorConfig.xml");
+        Configuration configuration = cp.parseConfiguration(generatorConfigFile);
+        DefaultShellCallback callback = new DefaultShellCallback(true);
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(configuration, callback, warnings);
+        myBatisGenerator.generate(null);
+        // 将daotemp包融合至dao包里面
+        List<File> daotempDirectories = CommonUtils.iterateFileRecursion(sourceDirectory, new FileFilter() {
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.getName().equalsIgnoreCase("daotemp");
+            }
+        });
+        for (int i = 0; i < daotempDirectories.size(); i++) {
+            File daotempFile = daotempDirectories.get(i);
+            if (daotempFile.isDirectory()) {
+                File[] daoFiles = daotempFile.listFiles();
+                for (File newDaoFile : daoFiles) {
+                    String interfaceName = newDaoFile.getName().replace(".java", "");
+                    System.out.println(newDaoFile);
+                    System.out.println(interfaceName);
+                    File oldDaoFile = new File(newDaoFile.getAbsolutePath().replace("daotemp", "dao"));
+                    String newFileStr = FileUtils.readFileToString(newDaoFile, encoding);
+                    newFileStr = newFileStr.replaceAll("daotemp", "dao");
+                    if (!oldDaoFile.exists()) {
+                        FileUtils.writeStringToFile(oldDaoFile, newFileStr, encoding);
+                    } else {
+//                        String oldFileStr = FileUtils.readFileToString(oldDaoFile, encoding);
+//                        CompilationUnit oldUnit = StaticJavaParser.parse(oldFileStr);
+//                        CompilationUnit newUnit = StaticJavaParser.parse(newFileStr);
+//                        Optional<ClassOrInterfaceDeclaration> oldInterface = oldUnit.getInterfaceByName(interfaceName);
+//                        Optional<ClassOrInterfaceDeclaration> newInterface = newUnit.getInterfaceByName(interfaceName);
+//                        ClassOrInterfaceDeclaration oldInterfaceBodyDeclare = oldInterface.get();
+//                        ClassOrInterfaceDeclaration newInterfaceBodyDeclare = newInterface.get();
+//                        NodeList<BodyDeclaration<?>> oldMembers = oldInterfaceBodyDeclare.getMembers();
+//                        NodeList<BodyDeclaration<?>> newMembers = newInterfaceBodyDeclare.getMembers();
+//                        NodeList<BodyDeclaration<?>> needAddMemberList = new NodeList<>();
+//                        for (int oldMemberIndex = 0; oldMemberIndex < oldMembers.size(); oldMemberIndex++) {
+//                            BodyDeclaration<?> crtOldMember = oldMembers.get(oldMemberIndex);
+//                        }
+//                        System.out.println(oldUnit.toString()); // print code
+                    }
+                }
+                FileUtils.deleteDirectory(daotempFile);
+            }
+        }
+    }
+}
